@@ -1,0 +1,34 @@
+==> Import:
+        - './' --> import from same folder
+        - './' absent --> import from node module
+        - for .js file no need to write (./abc/xyz)
+        - except .js file, file extension must be written (./abc/xyz.css)
+
+==> Export: two systems
+    - sys-1:
+        - export default xyz;
+    - sys-2:
+        - as object destructuring: export {xyz, abc};
+        - export {xyz, abc as pqr};
+
+==> ../ one level upper.
+
+==> Personal json file (public- data.json)
+    - json generator
+    - mock api
+
+==> Local Storage: 
+    => process of adding:
+        1. check: if remain, get an object containing data; it not remain, get an empty object.
+        2. convert object into JSON.parse
+        3. add quantity dynamically
+        4. set object by using JSON.stringify.
+
+    => process of removing
+        1. get stored data
+        2. use JSON.parse
+        3. check specific item in data
+        4. delete
+        5. set stored data
+
+==> JavaScript array reduce
